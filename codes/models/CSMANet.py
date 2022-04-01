@@ -14,9 +14,6 @@ num_cube = 6
 
 
 class ImgModel(nn.Module):
-    '''
-        RCRNet+cube maps
-    '''
     def __init__(self, output_stride=16):
         super(ImgModel, self).__init__()
         # video mode + video dataset
