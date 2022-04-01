@@ -51,8 +51,8 @@ class ImgModel(nn.Module):
         if self.training: self.initialize_w_image_pretrain()
 
     def initialize_w_image_pretrain(self):
-            backbone_vit_pretrain = torch.load(os.getcwd() + '/pretrain/RCRNet_vit_epoch_best.pth')
-            backbone_res2net_pretrain = torch.load(os.getcwd() + '/pretrain/RCRNet_res2_epoch_best.pth')
+            backbone_vit_pretrain = torch.load(os.getcwd() + '/pretrain/RCRNet_vit_pretrain.pth')
+            backbone_res2net_pretrain = torch.load(os.getcwd() + '/pretrain/RCRNet_res2_pretrain.pth')
 
             all_params = {}
             for k, v in self.backbone.state_dict().items():
