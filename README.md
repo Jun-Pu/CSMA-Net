@@ -1,3 +1,11 @@
+# Channel-Spatial Mutual Attention Network for 360° Salient Object Detection (ICPR 2022)
+
+Authors: [*Yi Zhang*](https://scholar.google.com/citations?user=NeHBHVUAAAAJ&hl=en), [*Wassim Hamidouche*](https://scholar.google.com/citations?user=ywBnUIAAAAAJ&hl=en), [*Olivier Deforges*](https://scholar.google.com/citations?user=c5DiiBUAAAAJ&hl=en)
+
+------
+# Introduction
+
+------
 # Implementation
 
 The source codes are available at [codes](https://github.com/PanoAsh/CSMA-Net/tree/main/codes).
