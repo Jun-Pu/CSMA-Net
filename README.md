@@ -28,7 +28,7 @@ In this work, we conduct 360° panoramic salient object detection by taking adva
 <p align="center">
     <img src="./figures/fig_visualization.jpg" width="90%"/> <br />
     <em> 
-    Figure 3: Visual results of CSMA-Net and SOTAs. Refer to [CSMA-Net-results](https://drive.google.com/file/d/1y6RRSkCWhe_ZnrnMaIdriUrKv-QKrGD_/view?usp=sharing) for whole visualization.
+    Figure 3: Visual results of CSMA-Net and SOTAs. Refer to "Implementation" for whole visualization.
     </em>
 </p>
 
