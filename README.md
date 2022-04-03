@@ -5,6 +5,8 @@ Authors: [*Yi Zhang*](https://scholar.google.com/citations?user=NeHBHVUAAAAJ&hl=
 ------
 # Introduction
 
+In this work, we conduct 360° panoramic salient object detection by taking advantage of both the global and local visual cues of 360° images, with a novel channel-spatial mutual attention network (CSMA-Net). The key component of the CSMA-Net is the proposed CSMA module, which cascades channel-/spatial weighting-based mutual attentions. The objective of our CSMA module is to refine and fuse the bottleneck features from two separate encoders with different planar representa- tions of 360° panorama as inputs, i.e., equirectangular image and cube map. Our CSMA-Net outperforms 10 state-of-the-art segmentation methods based on the proposed 360° SOD benchmark where multiple fine-tuning and testing strategies are applied to the widely-used 360° datasets. Extensive experimental results illustrate the effectiveness and robustness of the proposed CSMA-Net. 
+
 ------
 # Implementation
 
