@@ -88,9 +88,9 @@ class ImgModel(nn.Module):
             pred = self.backbone.seg_conv(feats[0], feats[1], feats[2], feats_bottleneck, frame.shape[2:])
 
             # gain the auxiliary outputs of cube map branch
-            feats_aux = cubes_bottleneck + feats_mutual_cb
+            feats_aux = feats_mutual_cb
             feats_aux_cube = self.equi2cube_aux.ToCubeTensor(feats_aux)
-            feats_cube_bottleneck = cube_feats[3] + self.CALayer(feats_aux_cube)
+            feats_cube_bottleneck = cube_feats[3] + feats_aux_cube
             pred_aux = self.backbone_cube.seg_conv(cube_feats[0], cube_feats[1], cube_feats[2], feats_cube_bottleneck,
                                                    [self.shapeCube, self.shapeCube])
 
@@ -165,19 +165,3 @@ class ChannelAttention(nn.Module):
         y = self.conv_du(y)
 
         return x * y
-
-
-class SpatialAttention(nn.Module):
-    def __init__(self, kernel_size=7):
-        super(SpatialAttention, self).__init__()
-
-        assert kernel_size in (3, 7), 'kernel size must be 3 or 7'
-        padding = 3 if kernel_size == 7 else 1
-
-        self.conv1 = nn.Conv2d(1, 1, kernel_size, padding=padding, bias=False)
-        self.sigmoid = nn.Sigmoid()
-
-    def forward(self, x):
-        max_out, _ = torch.max(x, dim=1, keepdim=True)
-        y = self.conv1(max_out)
-        return self.sigmoid(y) * x
