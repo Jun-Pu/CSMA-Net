@@ -1,4 +1,4 @@
-# [Channel-Spatial Mutual Attention Network for 360° Salient Object Detection (ICPR 2022)](https://drive.google.com/file/d/1h8UPIIRtUd9A6xaCqdtSdJiSVPwEoJE8/view?usp=sharing)
+# [Channel-Spatial Mutual Attention Network for 360° Salient Object Detection (Accepted in the first round of ICPR 2022)](https://drive.google.com/file/d/1h8UPIIRtUd9A6xaCqdtSdJiSVPwEoJE8/view?usp=sharing)
 
 Authors: [*Jun-Pu Zhang (Yi Zhang)*](https://scholar.google.com/citations?user=NeHBHVUAAAAJ&hl=en), [*Wassim Hamidouche*](https://scholar.google.com/citations?user=ywBnUIAAAAAJ&hl=en), [*Olivier Deforges*](https://scholar.google.com/citations?user=c5DiiBUAAAAJ&hl=en)
 
